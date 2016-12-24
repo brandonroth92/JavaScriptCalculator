@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Calculator</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- google font -->
+    <link href='https://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <!-- main css file -->
+    <link href="css/main.css" type = "text/css" rel = "stylesheet">
+  </head>
+  <body>
+    <div class="container"> <!-- bootstrap container -->
+      <div class="row calculator">
+        
+        <div class="name-row text-center">
+          <h4>JavaScript Calculator</h4>
+        </div> <!-- name-row -->
+
+        <div class="screen-row text-right">
+          <div id="main-row">
+            <p id="main-text">0</p>
+          </div>
+          <div id="sub-row">
+            <p id="sub-text"></p>
+          </div>
+        </div> <!-- screen-row -->
+
+        <div class="button-row">
+          
+          <div class="col-xs-12">
+            <button id="aclear" onclick="handlers.allClear()">AC</button>
+            <button id="clearEntry" onclick="handlers.clearEntry()">CE</button>
+            <button onclick="handlers.arithmetic('/')">/</button>
+          </div> 
+
+          <div class="col-xs-12">
+              <button onclick="handlers.calculate(7)">7</button>
+              <button onclick="handlers.calculate(8)">8</button>
+              <button onclick="handlers.calculate(9)">9</button>
+              <button onclick="handlers.arithmetic('*')">*</button>
+          </div> 
+
+          <div class="col-xs-12">
+              <button onclick="handlers.calculate(4)">4</button>
+              <button onclick="handlers.calculate(5)">5</button>
+              <button onclick="handlers.calculate(6)">6</button>
+              <button onclick="handlers.arithmetic('-')">-</button>
+          </div>
+
+          <div class="col-xs-12">
+              <button onclick="handlers.calculate(1)">1</button>
+              <button onclick="handlers.calculate(2)">2</button>
+              <button onclick="handlers.calculate(3)">3</button>
+              <button onclick="handlers.arithmetic('+')">+</button>
+          </div>
+
+          <div class="col-xs-12">
+              <button id="zero" onclick="handlers.calculate(0)">0</button>
+              <button onclick="handlers.decimal()">.</button>
+              <button onclick="handlers.evaluate()" id="enter">=</button>
+          </div>
+          
+        </div> <!-- button-row -->
+      </div> <!-- row calculator -->
+    </div> <!-- container -->
+
+    <!-- js file(s) -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

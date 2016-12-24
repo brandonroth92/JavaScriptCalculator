@@ -1,0 +1,80 @@
+body {
+  background-color: #8D8D8D;
+  padding: 8em 0;
+  font-family: "Quantico", sans-serif;
+}
+
+.calculator {
+  background-color: #DCDCDC;
+  color: black;
+  width: 275px;
+  height: 410px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 8px 20px 0px 20px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+
+.screen-row {
+  background-color: #c3c2ab;
+  width: 199px;
+  height: 65px;
+  margin: 15px auto 8px auto;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+#main-text {
+  margin-top: 3px;
+  margin-right: 15px;
+  font-size: 30px;
+}
+
+#sub-text {
+  position: relative;
+  bottom: 17px;
+  margin-right: 19px;
+  margin-bottom: 0px;
+  color: #8b8b7b;
+  font-size: 14px;
+}
+
+.button-row .col-xs-12 {
+  padding: 0px 10px 0px 18px;
+}
+
+button {
+  height: 40px;
+  width: 47px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none; 
+  outline: none;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 2px 0px 0px #222121, inset -1px -.5px 1px 1px #515151;
+}
+
+button:active {
+  transform: translate(0px, 1px);
+  box-shadow: none;
+}
+
+#zero {
+  width: 97px;
+}
+
+#aclear {
+  width: 97px;
+  background-color: red;
+  border: 1px solid gray;
+}
+
+#clearEntry {
+  background-color: red;
+  border: 1px solid gray;
+}
+
+
+
+
